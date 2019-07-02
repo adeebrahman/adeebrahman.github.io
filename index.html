@@ -15,6 +15,18 @@
 
       <style type="text/css">
   
+    .nav {
+		background-color: black;
+	}
+
+	.nav a{
+		color: white;
+	}
+
+	.nav a:hover{
+		color: #aaa;
+	}
+
     .blah{
       color:red;
     } 
@@ -58,32 +70,19 @@
   
 
   <body >
-    <!--NAVBAR-->
-    <nav class="navbar-dark bg-dark">
-      <button class="navbar-toggler" type= "button" data-toggle="collapse" data-target="#navContent">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class ="navbar-brand" href="#">AR</a>
-    </nav>
-    <!--Code for dropdown-->
-    <div class = "collapse navbar navbar-collapse" id = "navContent">
-      <ul class = "navbar-nav ">
-        <li>
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li>
-          <a class="nav-link" href="#">About Me</a>
-        </li>
-        <li>
-          <a class="nav-link" href="#">Portfolio</a>
-        </li>
-        <li>
-          <a class="nav-link" href="#contactMe">Contact Me</a>
-        </li>
-      </ul>
-    </div>
+    <!------------------------------------------NAVBAR---------------------------------->
     
-    <div class = "jumbotron jumbotron-fluid text-center ">
+    <nav class="nav sticky-top justify-content-center" style="color: white;">
+		<a class="nav-link lead" href="#home"><b>		Home		</b></a>
+	  	<a class="nav-link lead" href="#about_me"><b>	About Me 	</b></a>
+	  	<a class="nav-link lead" href="#portfolio"><b>	Portfolio	</b></a>
+	  	<a class="nav-link lead" href="#skills"><b>		Skills		</b></a>
+	  	<a class="nav-link lead" href="#contact_me"><b>	Contact Me 	</b></a>
+	</nav>
+
+    <!------------------------------------------------- JUMBOTRON --------------------------------->
+
+    <div class = "jumbotron jumbotron-fluid text-center " id= "home">
       <div class = "container">
         <h1 class = "display-4 animated fadeIn delay-0.8s "> Hi! I'm</h1>
         <h1 class = "display-1 animated fadeInUp delay-1s"><strong> Adeeb Rahman </strong></h1>
@@ -92,14 +91,14 @@
     </div>
 
 
-    <div class = "container aboutMe" ">
+    <div class = "container aboutMe" id="about_me">
 
       <h2 class=" wow fadeInLeft"> About Me </h2>
 
       <div class="row">
         <div class="col-md-6 wow fadeInLeft">
           <p class="lead">
-            I am a third year student at the Univeristy of Toronto, majoring
+            I am a third year student at the University of Toronto, majoring
             in Electrical and Computer Engineering. I look to concurrently 
             complete a minor in Artificial Intelligence and businees certificate along with 
             my degree.
@@ -128,7 +127,7 @@
     <!-------------------------------------------------------SKILLS--------------------------------------------------->
 
                               
-    <div class = " container wow fadeInLeft">  
+    <div class = " container wow fadeInLeft" id="skills">  
         <h2>Skills</h2>
         
         <!--------------------------------------------SOFTWARE (All pics are 800x800-------->
@@ -255,10 +254,10 @@
 
 
   
+    <!------------------------------------------------- PORTFOLIO ---------------------------->
 
 
-
-    <div class = "container">
+    <div class = "container" id="portfolio">
       
       <div class = "wow fadeInLeft">  
         <h2>Portfolio</h2>
@@ -326,7 +325,7 @@
       </div>
 
       <!----------------------------------- CONTACT ME---------------------------------------------->
-      <div id="contactMe">
+      <div id="contact_me">
         
         <h2 class = " mt-4">Contact Me</h2>
 
